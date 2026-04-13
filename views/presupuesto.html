@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+      <meta charset="UTF-8">
+      <title>Presupuesto</title>
+      <link rel="stylesheet" href="../css/Estilos.css">
+    </head>
+
+    <body>
+
+    <header>
+      <nav>
+        <a href="../index.html">
+          <img src="../Img/LogoEmpresa.png" width="120" height="80" alt="Logo">
+        </a>
+
+        <div>
+          <a href="../index.html">Inicio</a>
+          <a href="productos.html">Productos</a>
+          <a href="presupuesto.html" class="activo">Presupuesto</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+
+      <h2>Solicitar presupuesto</h2>
+
+      <!-- FORMULARIO -->
+      <form>
+
+        <!-- Nombre con validación -->
+        <input type="text" placeholder="Nombre" required pattern="[A-Za-z ]{3,}">
+        <br><br>
+
+        <!-- Email -->
+        <input type="email" placeholder="Email" required>
+        <br><br>
+
+        <!-- Teléfono (9 números) -->
+        <input type="tel" placeholder="Teléfono" required pattern="[0-9]{9}">
+        <br><br>
+
+        <!-- Campo multilínea -->
+        <textarea placeholder="Solicite más información" required></textarea>
+        <br><br>
+
+        <!-- Checkbox obligatorio -->
+        <label>
+          <input type="checkbox" required>
+          Acepto la política de privacidad
+        </label>
+        <br><br>
+
+        <!-- Botón -->
+        <button type="submit">Enviar</button>
+
+      </form>
+
+    </main>
+
+    <footer>
+      <p>© Dentista Mallenco</p>
+    </footer>
+
+    </body>
+</html>
